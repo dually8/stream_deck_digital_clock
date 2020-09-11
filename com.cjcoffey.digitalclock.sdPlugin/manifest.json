@@ -1,0 +1,39 @@
+{
+  "Actions": [
+    {
+      "Icon": "action/images/actionimage",
+      "Name": "Digital Clock",
+      "States": [
+        {
+          "Image": "action/images/image"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Show a nice analog clock",
+      "UUID": "com.cjcoffey.digitalclock.action"
+    }
+  ],
+  "SDKVersion": 2,
+  "Author": "CJ Coffey",
+  "CodePath": "index.html",
+  "PropertyInspectorPath": "propertyinspector/index.html",
+  "Description": "Simply the time.",
+  "Name": "Digital Clock",
+  "Icon": "pluginIcon",
+  "URL": "https://www.cjcoffey.com",
+  "Version": "1.0",
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.11"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Software":
+    {
+        "MinimumVersion" : "4.1"
+    }
+}
