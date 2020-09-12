@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>com.elgato.analogclock PI</title>
+	<title>com.cjcoffey.digitalclock PI</title>
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="css/sdpi.css">
 </head>
@@ -10,7 +10,7 @@
 <body>
 	<div class="sdpi-wrapper hidden">
 		<div type="select" class="sdpi-item">
-			<div class="sdpi-item-label">Face</div>
+			<div class="sdpi-item-label">Color</div>
 			<select class="sdpi-item-value select clockSelector" onchange="sendValueToPlugin(Number(event.target.value), 'clock_index')">
 			</select>
 		</div>
@@ -23,8 +23,8 @@
 
 		/** Step 1: Subscribe to the 'connected' event
 		 * and call your own initialization method.
-		 * The connected - event is emitted, when StreamDeck 
-		 * has established a connection. 
+		 * The connected - event is emitted, when StreamDeck
+		 * has established a connection.
 		 * The 'connected' event carries a JSON object containing
 		 * necessary information about the connection and the
 		 * inital data.
@@ -118,7 +118,7 @@
 			Array.from(el.querySelectorAll('sdpi-item-label')).forEach(e => {
 				e.innerHTML = e.innerHTML.replace(e.innerText, localize(e.innerText));
 			});
-			Array.from(el.querySelectorAll('*:not(script)')).forEach(e => {  
+			Array.from(el.querySelectorAll('*:not(script)')).forEach(e => {
 				if (e.childNodes && e.childNodes.length > 0 && e.childNodes[0].nodeValue && typeof e.childNodes[0].nodeValue === 'string') {
 					e.childNodes[0].nodeValue = localize(e.childNodes[0].nodeValue);
 				}

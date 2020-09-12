@@ -9,7 +9,7 @@
         }
       ],
       "SupportedInMultiActions": false,
-      "Tooltip": "Show a nice analog clock",
+      "Tooltip": "Show a nice DIGITAL clock",
       "UUID": "com.cjcoffey.digitalclock.action"
     }
   ],

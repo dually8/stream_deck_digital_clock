@@ -2,11 +2,13 @@
 
 Trying to take Elgato's analog clock and make it simpler and easier to read at a glance.
 
+![Example Image](com.cjcoffey.digitalclock.sdPlugin\action\images\image@2x.png)
+
 ## TODO
 
-- [ ] Make it work
-- [ ] Re-name all the stuff that was stolen from Elgato's analogue clock
-- [ ] ???
+- [x] Make it work
+- [x] Re-name all the stuff that was stolen from Elgato's analogue clock
+- [ ] Allow font changing maybe?
 
 ### Links
 

@@ -1,19 +1,17 @@
 {
-  "Description": "いつでも時間厳守。", 
-  "Name": "アナログ時計", 
-  "com.elgato.analogclock.action": {
-    "Name": "アナログ時計", 
-    "Tooltip": "ステキなアナログ時計を表示"
+  "Description": "いつでも時間厳守。",
+  "Name": "アナログ時計",
+  "com.cjcoffey.digitalclock.action": {
+    "Name": " デジタル 時計",
+    "Tooltip": "ステキなデジタル時計を表示"
   },
-  
+
   "Localization": {
-      "Face": "文字盤",
-      "Black" : "ブラック",
-      "Blue" : "ブルー",
-      "Blueish" : "青みがかった",
-      "Green" : "グリーン",
-      "Red": "レッド",
-      "White": "ホワイト",
-      "Transparent": "透明"
+      "Color": "色",
+      "Black" : "黒",
+      "Transparent": "透明",
+      "Dracula-Pink": " ピンク",
+      "Dracula-Cyan": "青",
+      "Dracula-Purple": "紫"
   }
 }

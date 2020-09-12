@@ -5,22 +5,22 @@ function connected (jsn) {
     debugLog('Connected Plugin:', jsn);
 
     /** subscribe to the willAppear event */
-    $SD.on('com.elgato.analogclock.action.willAppear', jsonObj =>
+    $SD.on('com.cjcoffey.digitalclock.action.willAppear', jsonObj =>
         action.onWillAppear(jsonObj)
     );
-    $SD.on('com.elgato.analogclock.action.willDisappear', jsonObj =>
+    $SD.on('com.cjcoffey.digitalclock.action.willDisappear', jsonObj =>
         action.onWillDisappear(jsonObj)
     );
-    $SD.on('com.elgato.analogclock.action.keyUp', jsonObj =>
+    $SD.on('com.cjcoffey.digitalclock.action.keyUp', jsonObj =>
         action.onKeyUp(jsonObj)
     );
-    $SD.on('com.elgato.analogclock.action.sendToPlugin', jsonObj =>
+    $SD.on('com.cjcoffey.digitalclock.action.sendToPlugin', jsonObj =>
         action.onSendToPlugin(jsonObj)
     );
 }
 
 var action = {
-    type: 'com.elgato.analogclock.action',
+    type: 'com.cjcoffey.digitalclock.action',
     cache: {},
 
     getContextFromCache: function (ctx) {
@@ -32,7 +32,7 @@ var action = {
         if (!jsn.payload || !jsn.payload.hasOwnProperty('settings')) return;
 
         const clockIndex = jsn.payload.settings['clock_index'] || 0;
-        const clock = new AnalogClock(jsn);
+        const clock = new DigitalClock(jsn);
 
         clock.setClockFaceNum(clockIndex);
         clock.toggleClock();
@@ -104,7 +104,7 @@ var action = {
     }
 };
 
-function AnalogClock (jsonObj) {
+function DigitalClock (jsonObj) {
     var jsn = jsonObj,
         context = jsonObj.context,
         clockTimer = 0,
@@ -169,8 +169,6 @@ function AnalogClock (jsonObj) {
 
     function drawClock (jsn) {
         clock.drawClock();
-        // TODO: Basically all we need is this bad boy
-        clockface.text === true && $SD.api.setTitle(context, new Date().toLocaleTimeString(), null);
         $SD.api.setImage(
             context,
             clock.getImageData()

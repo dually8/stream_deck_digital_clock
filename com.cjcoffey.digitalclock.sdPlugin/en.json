@@ -1,19 +1,17 @@
 {
-  "Description": "Always be on time.", 
-  "Name": "Analog Clock", 
-  "com.elgato.analogclock.action": {
-    "Name": "Analog Clock", 
-    "Tooltip": "Show a nice analog clock"
+  "Description": "Simply time",
+  "Name": "Digital Clock",
+  "com.cjcoffey.digitalclock.action": {
+    "Name": "Digital Clock",
+    "Tooltip": "Show a nice DIGITAL clock"
   },
-  
+
   "Localization": {
-      "Face": "Face",
+      "Color": "Color",
       "Black" : "Black",
-      "Blue" : "Blue",
-      "Blueish" : "Blueish",
-      "Green" : "Green",
-      "Red": "Red",
-      "White": "White",
-      "Transparent": "Transparent"
+      "Transparent": "Transparent",
+      "Dracula-Pink": "Dracula-Pink",
+      "Dracula-Cyan": "Dracula-Cyan",
+      "Dracula-Purple": "Dracula-Purple"
   }
 }
