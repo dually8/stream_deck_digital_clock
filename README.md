@@ -2,7 +2,7 @@
 
 Trying to take Elgato's analog clock and make it simpler and easier to read at a glance.
 
-![Example Image](com.cjcoffey.digitalclock.sdPlugin\action\images\image@2x.png)
+![Eample image](./com.cjcoffey.digitalclock.sdPlugin/action/images/image@2x.png)
 
 ## TODO
 
