@@ -2,7 +2,22 @@
 
 Trying to take Elgato's analog clock and make it simpler and easier to read at a glance.
 
-![Eample image](./com.cjcoffey.digitalclock.sdPlugin/action/images/image@2x.png)
+![Example image](./com.cjcoffey.digitalclock.sdPlugin/action/images/image@2x.png)
+
+## Installation
+
+### Windows
+
+1. Copy `com.cjcoffey.digitalclock.sdPlugin` folder to `C:\Users\YOUR_USER_NAME\AppData\Roaming\Elgato\StreamDeck\Plugins`
+    - Replace `YOUR_USER_NAME` with your actual username
+3. Restart Stream Deck software.
+4. See plugin under `Custom` section.
+
+### MacOS
+
+1. Copy `com.cjcoffey.digitalclock.sdPlugin` folder to `~/Library/Application Support/com.elgato.StreamDeck/Plugins`.
+2. Restart Stream Deck software.
+3. See plugin under `Custom` section.
 
 ## TODO
 
